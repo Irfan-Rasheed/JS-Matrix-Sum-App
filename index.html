@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Matrix  Addition</title>
+</head>
+
+<body>
+<div class="container">
+    <h1>Matrix Sum App</h1>
+
+    <form onsubmit="start(); return false">
+
+        <input type="number" required min="2" id="input1">
+        x
+        <input type="number" required min="2" id="input2">
+        <button type="submit">Create</button>
+        <div id="message"></div>
+    </form>
+
+    <br>
+    <br>
+
+    <form onsubmit="sum(); return false" class="hidden" id="consealedInputForm">
+
+        <div id="mInput1" class="mInput"></div>
+        <span>+</span>
+        <div id="mInput2" class="mInput"></div>
+        <br><br>
+        <div><button>Sum</button></div>
+
+        <div id="mResult" class="mInput"></div>
+
+    </form>
+</div>
+</body>
+
+</html>
